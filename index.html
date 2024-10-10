@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link-style -->
+     <link rel="stylesheet" href="style.css">
+     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="App">
+        <h1>House Of Tards</h1>
+        <div id="quizSelection" class="quiz-selection">
+            <h2>Select a Quiz</h2>
+            <button class="quiz-btn" onclick="startQuiz('animals')"> <img src="icons/cat.png" alt=""> Animals</button>
+            <button class="quiz-btn" onclick="startQuiz('countries')"><img src="icons/flag.jpg" alt=""> Countries</button>
+            <button class="quiz-btn" onclick="startQuiz('history')"> <img src="icons/history.png" alt="">History</button>
+            <button class="quiz-btn" onclick="startQuiz('cars')"> <img src="icons/car.jpg" alt="" id="car">Cars</button>
+            <button class="quiz-btn" onclick="startQuiz('motorcycles')"> <img src="icons/motorcycle.jpg" alt="" id="moto">motorcycles</button>
+        </div>
+        <div class="Quiz">
+            <h2 id="questions">
+                Question goes here
+            </h2>
+            <div class="answer">
+                <button class="btn">Answer1</button>
+                <button class="btn">Answer2</button>
+                <button class="btn">Answer3</button>
+                <button class="btn">Answer4</button>
+            </div>
+            <button id="answerBtn">Next Quastion</button>
+            <button id="goHomeBtn" style="display:none;">Go Home</button>
+            <button id="tryAgainBtn" style="display:none;">Try Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
